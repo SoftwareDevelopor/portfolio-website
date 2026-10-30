@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Full‑Stack Developer-Experience & Skills</title>
+
+    <!-- Owl Carousel core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/PORTFOLIO.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark">
+    <!--Social Icons-->
+    
+      <div class="row flex-column position-fixed top-50 end-0 translate-middle-y z-99">
+        <a
+          href="https://github.com/SoftwareDevelopor"
+          class="btn btn-dark mb-2 shadow-lg border"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/saurabh-kumar-178953203/"
+          class="btn btn-primary mb-2"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@iitjeemathsrockstar"
+          class="btn btn-danger mb-2"
+          ><i class="fa-brands fa-square-youtube"></i
+        ></a>
+        <a href="https://mail.google.com/mail/u/0/" class="btn btn-primary mb-2"
+          ><i class="fa-solid fa-square-envelope"></i
+        ></a>
+      </div>
+    
+
+    <!-- OFFCANVAS MENU -->
+    <div class="offcanvas offcanvas-start" id="menubar">
+      <div class="offcanvas-header">
+        <a href="/" class="navbar-brand d-flex align-items-center logo">
+          <img src="./images/PORTFOLIO.png" alt="" class="img-fluid" />
+          <h3 class="text-black pt-2 fs-5">Portfolio</h3>
+        </a>
+        <button
+          type="button"
+          class="btn btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <ul class="navbar-nav p-2">
+        <li class="nav-item active">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="/experience-skills.html" class="nav-link"
+            >Experience & Skills</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="/projects.html" class="nav-link">Projects </a>
+        </li>
+        <li class="nav-item">
+          <a href="/#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- NAVBAR -->
+    <header class="container-fluid shadow-lg m-0 sticky-top navigation">
+      <div class="container p-0">
+        <nav class="navbar navbar-expand-lg">
+          <button
+            data-bs-target="#menubar"
+            data-bs-toggle="offcanvas"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a
+            href="/"
+            class="navbar-brand d-flex gap-lg-2 gap-1 align-items-center logo"
+          >
+            <img src="./images/PORTFOLIO.png" alt="Logo Image" />
+            <h3 class="text-white pt-2 logo-text">Portfolio</h3>
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a href="/" class="nav-link text-white">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about.html" class="nav-link text-white">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/experience-skills.html" class="nav-link text-white"
+                  >Experience & Skills</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/projects.html" class="nav-link text-white"
+                  >Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/#contact" class="nav-link text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Experience Section (Owl Carousel) -->
+    <section class="container-fluid py-5" id="experience">
+      <div class="container text-white">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h4 mb-0 text-center text-white">Experience</h2>
+          <a href="#skills" class="small text-decoration-none text-white"
+            >Jump to skills</a
+          >
+        </div>
+
+        <div class="owl-carousel owl-theme mt-4" id="experienceCarousel">
+          <!-- Item 1 -->
+          <div class="item px-2">
+            <div class="card bg-dark text-white shadow-md h-100">
+              <div class="card-body">
+                <h5 class="card-title">Full Stack Developer Intern</h5>
+                <h6 class="card-subtitle mb-2 ">
+                  Null Class Edtech Private Limited • June 2025 — July 2025
+                </h6>
+                <p class="card-text small">
+                  Built the Youtube with the three extra features a responsive,
+                  an accessible interfaces using HTML, CSS, JavaScript and
+                  modern frameworks, NodeJS, ExpressJS, MongoDB. Improved
+                  performance and component reuse across the product.
+                </p>
+                <ul class="small mb-0">
+                  <li>Reusable component library</li>
+                  <li>Accessibility improvements (WCAG)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="item px-2">
+            <div class="card bg-dark text-white shadow-md h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Full Stack E-Commerce Web Development
+                </h5>
+                <h6 class="card-subtitle mb-2">
+                  At WS Cube Tech • Dec 2024 — Sept 2025
+                </h6>
+                <p class="card-text small">
+                  During doing the course, Build the e-commerce website using
+                  MERN stack. Focus on performance, scalability, and user
+                  experience.
+                </p>
+                <ul class="small mb-0">
+                  <li>Implemented interactive UI features</li>
+                  <li>Automated build and deployment tasks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container-fluid p-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="h4 mb-0">Skills</h2>
+        <a href="#experience" class="small text-decoration-none text-white">Back to experience</a>
+      </div>
+
+      <div class="container text-white text-center mb-4">
+        <div class="d-flex flex-nowrap">
+          <div>
+             <h3>Technical Skills</h3>
+        <p>Languages, Tools, Frameworks and Libraries</p>
+        <div class="row g-2 mx-auto" style="max-width: 100%">
+          <div>
+            <label for="">HTML & CSS</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="HTML &CSS"
+              aria-valuenow="100"
+              aria-valuemin="0" style="height: 14px;"
+              aria-valuemax="80"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 100%">
+                100%
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="">JavaScript</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100"
+              aria-valuemin="0" style="height: 14px;"
+              aria-valuemax="80"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 100%">
+                100%
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="">Bootstrap</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100"
+              aria-valuemin="0" style="height: 14px;"
+              aria-valuemax="80"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 100%">
+                100%
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="">Tailwind CSS</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100" style="height: 14px;"
+              aria-valuemin="0"
+              aria-valuemax="80"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 100%">
+                100%
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="">jQuery</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100" style="height: 14px;"
+              aria-valuemin="0"
+              aria-valuemax="80"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 100%">
+                100%
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="">ReactJS & NextJS</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100"
+              aria-valuemin="0" style="height: 14px;"
+              aria-valuemax="80"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 100%">
+                100%
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="">NodeJS & ExpressJS</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100"
+              aria-valuemin="0" style="height: 14px;"
+              aria-valuemax="80"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 100%">
+                100%
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="">MongoDB or Mongoose (for Databases)</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100" style="height: 14px;"
+              aria-valuemin="0"
+              aria-valuemax="80"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 100%">
+                100%
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="">C & C++ Language</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="95"
+              aria-valuemin="0" style="height: 14px;"
+              aria-valuemax="95"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 95%">
+                95%
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="">Java Programming</label>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="60" style="height: 14px;"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 60%">
+                60%
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="">Python Language & Its Libraries</label>
+            <div
+              class="progress"
+              role="progressbar"
+              style="height: 14px;"
+              aria-label="Danger example"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar text-bg-primary" style="width: 50%">
+                50%
+              </div>
+            </div>
+          </div>
+
+        </div>
+          </div>
+          <div class="container text-white mt-4">
+        <h3>Hard / Professional Skills</h3>
+        <p>Personal and workplace skills</p>
+        <div class="d-flex flex-wrap justify-content-center" style="max-width:650px; margin:0 auto; gap:0.5rem;">
+          <span class="badge bg-secondary p-2"><i class="fa-solid fa-users me-2"></i>Leadership</span>
+          <span class="badge bg-secondary p-2"><i class="fa-solid fa-bug me-2"></i>Code debugging</span>
+          <span class="badge bg-secondary p-2"><i class="fa-solid fa-lightbulb me-2"></i>Problem solving</span>
+          <span class="badge bg-secondary p-2"><i class="fa-solid fa-comments me-2"></i>Good communication</span>
+          <span class="badge bg-secondary p-2"><i class="fa-solid fa-clock me-2"></i>Punctuality</span>
+          <span class="badge bg-secondary p-2"><i class="fa-solid fa-tasks me-2"></i>Multi-tasking</span>
+          <span class="badge bg-secondary p-2"><i class="fa-solid fa-thumbs-up me-2"></i>Positive attitude</span>
+        </div>
+      </div>
+        </div>
+       
+      </div>
+      
+      
+      
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+   <footer class="container-fluid text-white pt-5 footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div
+            class="col-md-4 d-flex align-items-start"
+    
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-light text-decoration-none logo"
+            >
+              <img
+                src="./images/PORTFOLIO.png"
+                alt="Portfolio logo"
+                width="48"
+                height="48"
+                class="me-2"
+              />
+              <span class="fs-5">Portfolio</span>
+            </a>
+          </div>
+
+          <div class=" col-md-2">
+            <h6>Quick links</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="/about.html" class="nav-link p-0 text-white">About</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/experience-skills.html" class="nav-link p-0 text-white">Experience</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/projects.html" class="nav-link p-0 text-white"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/#contact" class="nav-link p-0 text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-3 "
+          >
+            <h6>Follow me</h6>
+            <div class="d-flex gap-2">
+              <a
+                href="https://github.com/SoftwareDevelopor"
+                class="btn btn-outline-light btn-sm social-icon"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/saurabh-kumar-178953203/"
+                class="btn btn-outline-light btn-sm"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@iitjeemathsrockstar"
+                class="btn btn-outline-light btn-sm"
+                aria-label="YouTube"
+                ><i class="fa-brands fa-square-youtube"></i
+              ></a>
+              <a
+                href="mailto:youremail@example.com"
+                class="btn btn-outline-light btn-sm"
+                aria-label="Email"
+                ><i class="fa-solid fa-square-envelope"></i
+              ></a>
+            </div>
+            <small class="d-block text-white mt-3"
+              >Built with Bootstrap • © <span id="currentYear"></span> Saurabh
+              Kumar</small
+            >
+          </div>
+        </div>
+        <hr class="border-secondary mt-4" />
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-4"
+        >
+          <p class="mb-0 text-white small">
+            Designed &amp; developed by Saurabh Kumar
+          </p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="/privacy.html" class="text-white small">Privacy</a>
+            </li>
+            <li class="list-inline-item ms-3">
+              <a href="/terms.html" class="text-white small">Terms</a>
+            </li>
+            <li class="list-inline-item ms-3">
+              <a href="/sitemap.xml" class="text-white small">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script>
+        // set current year in footer
+        (function () {
+          var y = new Date().getFullYear();
+          var el = document.getElementById("currentYear");
+          if (el) el.textContent = y;
+        })();
+      </script>
+    </footer>
+  </body>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+  
+</html>

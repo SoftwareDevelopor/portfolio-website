@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+.navigation {
+  background: rgb(33, 37, 40);
+}
+.logo {
+  max-width: 60px;
+  text-align: center;
+}
+.logo img {
+  width: 40%;
+  height: auto;
+}
+.navbar-toggler-icon {
+  box-shadow: 0 0 4px 3px rgb(45, 45, 45);
+  color: rgb(241, 239, 239);
+}
+.logo-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+.item{
+  height: 300px;
+}
+.underlinedtext {
+  text-decoration: underline;
+}
+.projects {
+  background: rgb(50, 50, 50);
+  color: white;
+}
+.projects img:nth-child(1){
+    max-height: 100px;
+}
+.box {
+  box-shadow: 0 0 8px 1px whitesmoke;
+  border-radius: 5px;
+}
+.footer {
+  background: rgb(28, 30, 33);
+}
+
+/* Timeline styles */
+.timeline {
+    position: relative;
+    padding: 10px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: var(--bs-primary);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.timeline-content {
+    width: calc(50% - 50px);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-right: auto;
+}
+
+/* Skill cards */
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.progress {
+    height: 8px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+/* Animation classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover effects */
+.text-primary {
+    transition: color 0.3s ease;
+}
+
+.skill-card:hover .text-primary {
+    color: #007bff !important;
+}
+
+/* Timeline responsive */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 40px;
+    }
+    
+    .timeline-badge {
+        left: 40px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 90px);
+        margin-left: 70px !important;
+    }
+}
+
+/* Skill cards responsive */
+@media (max-width: 576px) {
+    .skill-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Progress bars animation */
+@keyframes progressAnimation {
+    from { width: 0; }
+}

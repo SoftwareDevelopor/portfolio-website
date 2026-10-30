@@ -1,0 +1,34 @@
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  /* CSS for mobile devices */
+  #menubar {
+    width: 100%;
+  }
+  .h1{
+    font-size: 18px;
+  }
+  .p{
+    font-size: 14px;
+    text-align: justify;
+  }
+  iframe{
+    height: 280px;
+  }
+  .logo img {
+    max-width: 40%;
+  }
+  .logo-text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width:576px) and (max-width:770px) {
+  #menubar {
+    width: 100%;
+  }
+  .logo img {
+    max-width: 30%;
+  }
+  .logo-text{
+    font-size: 15px;
+  }
+}

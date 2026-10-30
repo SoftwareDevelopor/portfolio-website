@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full‑Stack Developer-Projects</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/PORTFOLIO.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark">
+    <!--Social Icons-->
+     <div
+      class="row flex-column align-items-center position-fixed top-50 end-0 translate-middle-y z-99"
+    >
+      <a
+        href="https://github.com/SoftwareDevelopor"
+        class="btn btn-dark mb-2 shadow-lg border flex justify-content-center align-items-center"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/saurabh-kumar-178953203/"
+        class="btn btn-primary mb-2 flex justify-content-center align-items-center"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/@iitjeemathsrockstar"
+        class="btn btn-danger mb-2 flex justify-content-center align-items-center"
+        ><i class="fa-brands fa-square-youtube"></i
+      ></a>
+      <a
+        href="https://mail.google.com/mail/u/0/"
+        class="btn btn-primary mb-2 flex justify-content-center align-items-center"
+        ><i class="fa-solid fa-square-envelope"></i
+      ></a>
+    </div>
+
+
+    <!-- OFFCANVAS MENU -->
+    <div class="offcanvas offcanvas-start" id="menubar">
+      <div class="offcanvas-header">
+        <a href="/" class="navbar-brand d-flex align-items-center logo">
+          <img src="./images/PORTFOLIO.png" alt="" class="img-fluid" />
+          <h3 class="text-black pt-2 fs-5">Portfolio</h3>
+        </a>
+        <button
+          type="button"
+          class="btn btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <ul class="navbar-nav p-2">
+        <li class="nav-item active">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="/experience-skills.html" class="nav-link">Experience & Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="/projects.html"nav-link">Projects </a>
+        </li>
+        <li class="nav-item">
+          <a href="/#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- NAVBAR -->
+    <header class="container-fluid shadow-lg m-0 sticky-top navigation">
+      <div class="container p-0">
+        <nav class="navbar navbar-expand-lg">
+          <button
+            data-bs-target="#menubar"
+            data-bs-toggle="offcanvas"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon rounded-2"></span>
+          </button>
+          <a
+            href="/"
+            class="navbar-brand d-flex gap-lg-2 gap-1 align-items-center logo"
+          >
+            <img src="./images/PORTFOLIO.png" alt="Logo Image" />
+            <h3 class="text-white pt-2 logo-text">Portfolio</h3>
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a href="/" class="nav-link text-white">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about.html" class="nav-link text-white">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/experience-skills.html" class="nav-link text-white">Experience & Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="/projects.html" class="nav-link text-white">Projects </a>
+              </li>
+              <li class="nav-item">
+                <a href="/#contact" class="nav-link text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--Projects Section-->
+
+    <section class="container-fluid py-5">
+      <div class="container">
+        <div class="row gap-2 justify-content-center align-items-center">
+          
+          <div class="card p-2 projects" style="max-width: 18rem">
+            <img
+              src="./images/vidshare.png"
+              class="card-img-top h-25"
+              alt="YouTube Clone"
+            />
+            <div class="card-body text-white">
+              <h5 class="card-title underlined-text">
+                <a
+                  href="https://vidshare-khaki.vercel.app/"
+                  class="text-decoration-none text-white"
+                  >YouTube Clone</a
+                >
+              </h5>
+              <p class="card-text">
+                Developed a YouTube Clone with 3 extra features using React.js, Next.js, Node.js , Express.js, and MongoDB. Integrated with the enhanced UI & UX with enhanced navigation to accessibility and improving engagement and website performances.
+              </p>
+              <a
+                href="https://github.com/SoftwareDevelopor/vidshare.git"
+                class="btn btn-primary"
+                >Codes Available</a
+              >
+            </div>
+          </div>
+          
+          <div class="card p-2 projects" style="max-width: 18rem">
+            <img
+              src="./images/Student-Management-System.png"
+              class="card-img-top h-25"
+              alt="Advanced Student Admission Management System"
+            />
+            <div class="card-body text-white">
+              <h5 class="card-title underlined-text">
+                <a
+                  href="#"
+                  class="text-decoration-none text-white"
+                  >Advanced Student Admission Management System</a
+                >
+              </h5>
+              <p class="card-text">
+                Developed an Advanced Student Admission Management System having so many features using Python Programming and OOPs Concepts with working in CLI mode, highly accessible and engagable.
+              </p>
+              <a
+                href="https://github.com/PythonDeveloper66/student_management_system.git"
+                class="btn btn-primary"
+                >Codes Available</a
+              >
+            </div>
+          </div>
+          
+          <div class="card p-2 projects" style="max-width: 18rem">
+            <img
+              src="./images/attendance.png"
+              class="card-img-top "
+              alt="Advanced Students Attendance System with Face Recognition"
+            />
+            <div class="card-body text-white">
+              <h5 class="card-title underlined-text">
+                <a
+                  href="#"
+                  class="text-decoration-none text-white"
+                  >Advanced Students Attendance System with Face Recognition</a
+                >
+              </h5>
+              <p class="card-text">
+                Final year major project of the team of 3 students. Developed an Advanced Students Attendance System with Face Recognition using Python Programming, OOPs Concepts, and Python Libraries with enhanced UI/UX. 
+              </p>
+              <a
+                href="https://github.com/PythonDeveloper66/student-attendance-system-with-face_recognition.git"
+                class="btn btn-primary"
+                >Codes Available</a
+              >
+            </div>
+          </div>
+
+          <div class="card p-2 projects" style="max-width: 18rem">
+            <img
+              src="./images/scientific-calc.png"
+              class="card-img-top "
+              alt="Scientific Calculator for Engineers"
+            />
+            <div class="card-body text-white">
+              <h5 class="card-title underlined-text">
+                <a
+                  href="https://calculator-app-two-sepia.vercel.app/"
+                  class="text-decoration-none text-white"
+                  >Scientific Calculator </a
+                >
+              </h5>
+              <p class="card-text">
+                Developed a frontend app ‘Scientific Calculator
+                Application Software’ for the engineering purposes using HTML, CSS, Media Queries, and JS. Having all
+                the scientific calculations. Integrated with the enhanced UI &
+                UX to accessibility and improving engagement.
+              </p>
+              <a
+                href="https://github.com/SoftwareDevelopor/Calculator-app.git"
+                class="btn btn-primary"
+                >Codes Available</a
+              >
+            </div>
+          </div>
+
+          <div class="card p-2 projects" style="max-width: 18rem">
+            <img
+              src="./images/e-comm.png"
+              class="card-img-top h-25"
+              alt="E-Commerce Web"
+            />
+            <div class="card-body text-white">
+              <h5 class="card-title underlined-text">
+                <a
+                  href="https://ecom-app-snowy.vercel.app/"
+                  class="text-decoration-none text-white"
+                  >E-Commerce Web</a
+                >
+              </h5>
+              <p class="card-text">
+                Developed an E-Commerce frontend website with 5 extra features using React.js, API Integration.
+                Integrated with the enhanced UI & UX with enhanced navigation to
+                accessibility and improving engagement and website performances.
+              </p>
+              <a
+                href="https://github.com/SoftwareDevelopor/EcomApp"
+                class="btn btn-primary"
+                >Codes Available</a
+              >
+            </div>
+          </div>
+
+          <div class="card p-2 projects" style="max-width: 18rem">
+            <img
+              src="./images/todolistapp.png"
+              class="card-img-top h-25"
+              alt="To Do List App"
+            />
+            <div class="card-body text-white">
+              <h5 class="card-title underlined-text">
+                <a
+                  href="https://to-do-list-app-delta-ten.vercel.app/"
+                  class="text-decoration-none text-white"
+                  >To Do List App</a
+                >
+              </h5>
+              <p class="card-text">
+                Developed a To-Do List App using React.js that allows users to manage their tasks efficiently. Integrated with the enhanced UI & UX with enhanced navigation to accessibility and improving engagement and website performances.
+              </p>
+              <a
+                href="https://github.com/SoftwareDevelopor/To-Do-List-App.git"
+                class="btn btn-primary"
+                >Codes Available</a
+              >
+            </div>
+          </div>
+
+          <div class="card p-2 projects" style="max-width: 18rem">
+            <img
+              src="./images/password-generate.png"
+              class="card-img-top "
+              alt="Password Generator"
+            />
+            <div class="card-body text-white">
+              <h5 class="card-title underlined-text">
+                <a
+                  href="https://password-generator-gamma-coral-61.vercel.app/"
+                  class="text-decoration-none text-white"
+                  >Password Generator </a
+                >
+              </h5>
+              <p class="card-text">
+                Developed a frontend app ‘Password Generator’ for the engineering purposes using HTML, CSS, and JS. Generate Passwords with your choice of length. Integrated with the enhanced UI &
+                UX to accessibility and improving engagement.
+              </p>
+              <a
+                href="https://github.com/SoftwareDevelopor/Password-Generator.git"
+                class="btn btn-primary"
+                >Codes Available </a
+              >
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer class="container-fluid text-white pt-5 footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div
+            class="col-md-4 d-flex align-items-start"
+    
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-light text-decoration-none logo"
+            >
+              <img
+                src="./images/PORTFOLIO.png"
+                alt="Portfolio logo"
+                width="48"
+                height="48"
+                class="me-2"
+              />
+              <span class="fs-5">Portfolio</span>
+            </a>
+          </div>
+
+          <div class=" col-md-2">
+            <h6>Quick links</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="/about.html" class="nav-link p-0 text-white">About</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/experience-skills.html" class="nav-link p-0 text-white">Experience & Skills</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/projects.html" class="nav-link p-0 text-white"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="/#contact" class="nav-link p-0 text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-md-3 "
+          >
+            <h6>Follow me</h6>
+            <div class="d-flex gap-2">
+              <a
+                href="https://github.com/SoftwareDevelopor"
+                class="btn btn-outline-light btn-sm social-icon"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/saurabh-kumar-178953203/"
+                class="btn btn-outline-light btn-sm"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@iitjeemathsrockstar"
+                class="btn btn-outline-light btn-sm"
+                aria-label="YouTube"
+                ><i class="fa-brands fa-square-youtube"></i
+              ></a>
+              <a
+                href="mailto:youremail@example.com"
+                class="btn btn-outline-light btn-sm"
+                aria-label="Email"
+                ><i class="fa-solid fa-square-envelope"></i
+              ></a>
+            </div>
+            <small class="d-block text-white mt-3"
+              >Built with Bootstrap • © <span id="currentYear"></span> Saurabh
+              Kumar</small
+            >
+          </div>
+        </div>
+        <hr class="border-secondary mt-4" />
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-4"
+        >
+          <p class="mb-0 text-white small">
+            Designed &amp; developed by Saurabh Kumar
+          </p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="/privacy.html" class="text-white small">Privacy</a>
+            </li>
+            <li class="list-inline-item ms-3">
+              <a href="/terms.html" class="text-white small">Terms</a>
+            </li>
+            <li class="list-inline-item ms-3">
+              <a href="/sitemap.xml" class="text-white small">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script>
+        // set current year in footer
+        (function () {
+          var y = new Date().getFullYear();
+          var el = document.getElementById("currentYear");
+          if (el) el.textContent = y;
+        })();
+      </script>
+    </footer>
+  </body>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</html>
