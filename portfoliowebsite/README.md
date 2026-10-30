@@ -2,7 +2,7 @@
 
 ## 🌐 Live Site
 
-[https://portfoliowebsite-alpha-sooty.vercel.app/](https://portfoliowebsite-alpha-sooty.vercel.app/)
+"https://portfolio-resume-website-8bt4.onrender.com/"
 
 ## 📝 Description
 

@@ -32,13 +32,27 @@ if (experiences) {
 const form = document.getElementById("contactForm");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  let formdata = new FormData(form)
-  await fetch("http://localhost:8000/api/contact", {
-    method: "POST",
-    body: formdata
-  }).then((res) => res.json()).then((response) => {
-    console.log(response)
-  }).catch((error) => { console.log(error) })
+
+  // Create FormData directly from your HTML form
+  const formData = new FormData(form);
+
+  try {
+    const res = await fetch("https://portfolio-website-tvci.onrender.com/api/contact", {
+      method: "POST",
+      body: formData // DO NOT set headers! The browser handles multipart/form-data automatically.
+    });
+
+    const contentType = res.headers.get("content-type");
+    if (contentType && contentType.includes("application/json")) {
+      const response = await res.json();
+      console.log("Success:", response);
+    } else {
+      const textResponse = await res.text();
+      console.error("Server returned non-JSON response:", textResponse);
+    }
+  } catch (error) {
+    console.error("Network or parsing error:", error);
+  }
 });
 
 let split;
