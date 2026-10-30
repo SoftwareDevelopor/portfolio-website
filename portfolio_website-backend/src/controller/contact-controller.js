@@ -1,6 +1,7 @@
 const ContactModal = require("../Modal/ContactModal");
 require("dotenv").config();
 const nodemailer = require("nodemailer");
+const { Resend } = require("resend")
 
 exports.createcontact = async (request, response) => {
   try {
@@ -23,15 +24,7 @@ exports.createcontact = async (request, response) => {
     const newContact = await ContactModal(contactData);
     await newContact.save().then(async (result) => {
 
-      var transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-          user: process.env.Email,
-          pass: process.env.PASSWORD
-        },
-        host: "smtp.gmail.com",
-        secure: false
-      });
+      const resend = new Resend(process.env.RESEND_API);
 
       var mailoptions = {
         from: `"Contact Form Enquiry" <${result.email}>`,
@@ -45,24 +38,27 @@ exports.createcontact = async (request, response) => {
       `
       };
 
-      await new Promise((resolve, reject) => {
-        transporter.sendMail(mailoptions, (error, info) => {
-          if (error) {
-            reject(error);
-          } else {
-            resolve(info);
-            const obj = {
-              status: true,
-              msg: "Thanking you for contacting to us...!",
-              _data: result
-            }
-            return response.send(obj)
-          }
-        });
-      });
-    })
+      let send = await resend.emails.send(mailoptions);
 
-  } catch (error) {
+      if (send) {
+        const obj = {
+          status: true,
+          msg: "Thanking you for contacting to us...!",
+          _data: result
+        }
+        response.send(obj)
+      }
+
+    }).catch(() => {
+      const obj = {
+        status: false,
+        msg: "Failed to send the email..!",
+        _data: null
+      }
+      response.send(obj)
+    })
+  }
+  catch (error) {
     console.error("Contact Form Error:", error);
     return response.send({
       status: false,
