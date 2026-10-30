@@ -26,18 +26,31 @@ exports.createcontact = async (request, response) => {
 
       const resend = new Resend(process.env.RESEND_API);
 
+      
       var mailoptions = {
-        from: `Contact Form Enquiry <${result.email}>`,
+        // System email (Resend se email bhejne ke liye required hai)
+        from: `${result.name} via Contact Form <onboarding@resend.dev>`,
+
+        // User ka email yahan daalein (jab aap Reply karenge toh user ko mail jayega)
+        replyTo: result.email,
+
+        // Aapka apna email jahan aapko enquiry message receive karna hai
         to: process.env.Email,
-        subject: "New Contact Us Enquiry.",
+
+        subject: `New Contact Enquiry from ${result.name}`,
         html: `
-        <div style="background-color: #f9f9f9; padding: 20px; font-family: Arial, sans-serif;">
-          <h1 style="color: #333; font-size: 20px;">Received message from ${result.name} (${result.email})</h1>
-          <p style="color: #666; font-size: 18px;">${result.message}</p>
-        </div>
-      `
+    <div style="background-color: #f9f9f9; padding: 20px; font-family: Arial, sans-serif;">
+      <h2 style="color: #333;">New Message Received</h2>
+      <p><strong>From:</strong> ${result.name} (${result.email})</p>
+      <p><strong>Message:</strong></p>
+      <blockquote style="background: #fff; padding: 10px; border-left: 4px solid #007bff;">
+        ${result.message}
+      </blockquote>
+    </div>
+  `
       };
 
+      
       let { data, error } = await resend.emails.send(mailoptions);
 
       if (data) {
