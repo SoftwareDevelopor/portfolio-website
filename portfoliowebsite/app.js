@@ -33,13 +33,12 @@ const form = document.getElementById("contactForm");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  // Create FormData directly from your HTML form
   const formData = new FormData(form);
 
   try {
     const res = await fetch("https://portfolio-website-tvci.onrender.com/api/contact", {
       method: "POST",
-      body: formData // DO NOT set headers! The browser handles multipart/form-data automatically.
+      body: formData 
     });
 
     const contentType = res.headers.get("content-type");

@@ -27,7 +27,7 @@ exports.createcontact = async (request, response) => {
       const resend = new Resend(process.env.RESEND_API);
 
       var mailoptions = {
-        from: `"Contact Form Enquiry" <${result.email}>`,
+        from: `Contact Form Enquiry <${result.email}>`,
         to: process.env.Email,
         subject: "New Contact Us Enquiry.",
         html: `
@@ -38,13 +38,21 @@ exports.createcontact = async (request, response) => {
       `
       };
 
-      let send = await resend.emails.send(mailoptions);
+      let { data, error } = await resend.emails.send(mailoptions);
 
-      if (send) {
+      if (data) {
         const obj = {
           status: true,
           msg: "Thanking you for contacting to us...!",
           _data: result
+        }
+        response.send(obj)
+      } else {
+        const obj = {
+          status: false,
+          msg: "Something went wrong with sending an email...!",
+          _data: null,
+          errormsg:error
         }
         response.send(obj)
       }
