@@ -9,8 +9,8 @@ app.use(bodyparser.json());
 // Configure CORS to allow your Vercel frontend domain
 const corsOptions = {
   origin: [
-    "https://portfoliowebsite-alpha-sooty.vercel.app", // without trailing slash
-    "https://portfoliowebsite-alpha-sooty.vercel.app/", // with explicit port,
+    "https://portfolio-resume-website-8bt4.onrender.com", // without trailing slash
+    "https://portfolio-resume-website-8bt4.onrender.com/", // with explicit port,
   ],
   methods: ['POST'],
   credentials: true,             // Allow credentials
